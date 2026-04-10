@@ -17,6 +17,11 @@
             <div class="logo">
                 <img src="https://i.ibb.co/cS9g7YZL/logo.png" alt="FoundHers Logo" class="nav-logo">
             </div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#podcast">Podcast</a>
@@ -204,6 +209,25 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Mobile Menu Toggle
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('.nav');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            if (mobileBtn) {
+                mobileBtn.addEventListener('click', () => {
+                    nav.classList.toggle('menu-open');
+                    document.body.style.overflow = nav.classList.contains('menu-open') ? 'hidden' : '';
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('menu-open');
+                    document.body.style.overflow = '';
+                });
+            });
+
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
