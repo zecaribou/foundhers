@@ -754,6 +754,28 @@ footer {
         padding: 2rem 1.5rem;
     }
 
+    .roster-member .bio-text {
+        max-height: 250px;
+        overflow-y: auto;
+        padding-right: 0.5rem;
+        border-top: 1px solid rgba(26,26,26,0.1);
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .roster-member .bio-text::-webkit-scrollbar {
+        width: 3px;
+    }
+    
+    .roster-member .bio-text::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .roster-member .bio-text::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: 4px;
+    }
+
     .involved-card {
         padding: 2rem 1.5rem;
     }
