@@ -408,7 +408,7 @@ a {
     flex: 0 0 calc(33.333% - 1.33rem); /* Show ~3 items on desktop */
     min-width: unset;
     width: 85vw;
-    max-width: 320px;
+    max-width: 350px;
     scroll-snap-align: start;
     text-align: center;
     background: var(--bg-secondary);
