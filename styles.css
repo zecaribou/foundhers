@@ -393,49 +393,44 @@ img {
     height: 380px;
 }
 
-/* Gallery Carousel - Smooth Horizontal Slide for the remaining images */
-.gallery-carousel-wrapper {
-    position: relative;
-    width: 100%;
-    margin-top: 2rem;
+.item-half-1 {
+    grid-column: span 6;
+    height: 440px;
 }
 
-.gallery-carousel {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1.5rem;
-    -webkit-overflow-scrolling: touch;
+.item-half-2 {
+    grid-column: span 6;
+    height: 440px;
 }
 
-.gallery-carousel::-webkit-scrollbar {
-    height: 3px;
+.item-third-1 {
+    grid-column: span 4;
+    height: 400px;
 }
 
-.gallery-carousel::-webkit-scrollbar-track {
-    background: rgba(17,17,17,0.03);
+.item-third-2 {
+    grid-column: span 4;
+    height: 400px;
 }
 
-.gallery-carousel::-webkit-scrollbar-thumb {
-    background: var(--accent-rose);
+.item-third-3 {
+    grid-column: span 4;
+    height: 400px;
 }
 
-.carousel-item {
-    flex: 0 0 350px;
-    height: 260px;
-    scroll-snap-align: start;
-    overflow: hidden;
+.item-large-3 {
+    grid-column: span 8;
+    height: 460px;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s ease;
+.item-small-3 {
+    grid-column: span 4;
+    height: 460px;
 }
 
-.carousel-item:hover img {
-    transform: scale(1.04);
+.item-full {
+    grid-column: span 12;
+    height: 500px;
 }
 
 /* Events Section */
@@ -916,6 +911,10 @@ img {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem; /* Prevent layout content from clipping the viewport edges */
+    }
+
     .section {
         padding: 6rem 0;
     }
@@ -947,10 +946,17 @@ img {
         pointer-events: all;
     }
     
+    .btn {
+        padding: 0.9rem 1.5rem; /* Adjust button padding to prevent overflow on mobile */
+        font-size: 0.78rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
-        gap: 1rem;
+        max-width: 320px;
+        margin: 0 auto;
+        gap: 0.8rem;
     }
     
     .hero-buttons .btn {
@@ -959,12 +965,15 @@ img {
     
     .gallery-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
     }
     
-    .item-large-1, .item-small-1, .item-small-2, .item-large-2 {
+    .item-large-1, .item-small-1, .item-small-2, .item-large-2,
+    .item-half-1, .item-half-2, .item-third-1, .item-third-2, .item-third-3,
+    .item-large-3, .item-small-3, .item-full {
         grid-column: span 12;
-        height: 300px;
+        height: auto;
+        aspect-ratio: 4/3;
     }
     
     .global-cities-list {
@@ -982,8 +991,8 @@ img {
     }
     
     .bio-modal-content {
-        padding: 2rem;
-        width: 95%;
+        padding: 2.2rem 1.8rem;
+        width: 92%;
     }
     
     .bio-modal-header {
