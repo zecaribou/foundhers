@@ -7,15 +7,17 @@
     <title>FoundHers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container container">
             <div class="logo">
-                <img src="assets/logo.png" alt="FoundHers Logo" class="nav-logo">
+                <a href="#hero">
+                    <img src="assets/logo.png" alt="FoundHers Logo" class="nav-logo">
+                </a>
             </div>
             
             <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -25,217 +27,334 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#podcast">Podcast</a>
+                <a href="#events">Events</a>
                 <a href="#community">Community</a>
                 <a href="#team">Team</a>
-                <a href="#get-involved" class="nav-cta">Get Involved</a>
+                <a href="#get-involved" class="nav-cta">Join the community</a>
             </div>
         </div>
     </nav>
 
-    <header id="hero" class="hero container fade-up">
-        <h1>FoundHers</h1>
-        <p>A global movement empowering and connecting women entrepreneurs, founders, operators, and investors.</p>
-        <span class="section-label" style="margin-bottom: 3rem;">Connecting founders, operators, and investors through thoughtful conversations.</span>
-
-        <div class="btn-group">
-            <a href="#podcast" class="btn btn-primary">Listen to the Podcast</a>
-            <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="btn btn-outline">Join the Movement</a>
+    <!-- Hero Section -->
+    <header id="hero" class="hero container">
+        <div class="hero-content">
+            <span class="label-cities">London &middot; Paris &middot; San Francisco &middot; and beyond</span>
+            <h1>A better room for <span class="italicized">women</span> who are building.</h1>
+            <p class="hero-description">FoundHers is a global community and podcast bringing women together through honest conversations, intimate gatherings and experiences that help us speak, build and grow.</p>
+            
+            <div class="hero-buttons">
+                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="btn btn-primary">Join the community</a>
+                <a href="https://luma.com/foundhersglobal" target="_blank" class="btn btn-outline">Explore our events</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="assets/community/event_3.jpg" alt="FoundHers Community Gathering">
         </div>
     </header>
 
-    <section id="about" class="about section container fade-up">
-        <span class="section-label">About Us</span>
-        <h2>FoundHers is a global platform highlighting the journeys of women entrepreneurs across industries and cultures.</h2>
-        <p class="about-text">
-            Through podcast conversations and community gatherings, we explore what it really takes to build companies, navigate uncertainty, and create meaningful careers. We believe the stories behind building companies matter - not just the successes, but the thinking, struggles, and lessons along the way.
-        </p>
-        <p class="about-text" style="margin-top: 1.5rem;">
-            Our goal is to build a global network of founders, operators, and supporters who believe in amplifying women's voices in entrepreneurship.
-        </p>
+    <!-- Inside FoundHers pillars -->
+    <section id="about" class="section container">
+        <span class="section-label">Inside FoundHers</span>
+        <div class="inside-pillars">
+            <div class="pillar-card">
+                <div class="pillar-image-wrapper">
+                    <img src="assets/community/event_2.jpg" alt="FoundHers Gathering">
+                </div>
+                <h3>Gather</h3>
+                <p>Founder dinners, walks, workshops and thoughtfully designed social experiences.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-image-wrapper">
+                    <img src="assets/community/event_1.jpg" alt="FoundHers Public Speaking">
+                </div>
+                <h3>Speak</h3>
+                <p>Audacity Lab and public-speaking spaces where women become more confident taking up space.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-image-wrapper">
+                    <img src="assets/podcast_1.png" alt="FoundHers Podcast Session">
+                </div>
+                <h3>Listen</h3>
+                <p>Honest conversations with women building businesses, unconventional careers and lives across cultures.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="podcast" class="podcast section fade-up">
-        <div class="container podcast-grid">
-            <div class="podcast-content">
+    <!-- Community Showcase Gallery -->
+    <section id="community" class="section community-gallery">
+        <div class="container gallery-container">
+            <span class="section-label">Community in Frames</span>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item item-large-1">
+                    <img src="assets/community/event_5.jpg" alt="FoundHers Community Event">
+                </div>
+                <div class="gallery-item item-small-1">
+                    <img src="assets/community/event_6.jpg" alt="FoundHers Community Gathering">
+                </div>
+                <div class="gallery-item item-small-2">
+                    <img src="assets/community/event_7.jpg" alt="FoundHers Community Interaction">
+                </div>
+                <div class="gallery-item item-large-2">
+                    <img src="assets/community/event_4.jpg" alt="FoundHers Networking Event">
+                </div>
+            </div>
+
+            <!-- Horizontal carousel showcasing founder portraits & podcast captures -->
+            <div class="gallery-carousel-wrapper">
+                <div class="gallery-carousel">
+                    <div class="carousel-item">
+                        <img src="assets/founder_1.png" alt="FoundHers Member Profile">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/founder_2.png" alt="FoundHers Member Reflection">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/founder_3.png" alt="FoundHers Founder Spotting">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/podcast_2.png" alt="FoundHers Podcast Guest Reflection">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+        <div class="container events-content">
+            <span class="section-label">Gatherings</span>
+            <h2>Upcoming gatherings</h2>
+            <p>Join us at our next city walks, founder dinners, and interactive masterclasses.</p>
+            <a href="https://luma.com/foundhersglobal" target="_blank" class="btn btn-primary">Explore our events</a>
+        </div>
+    </section>
+
+    <!-- Podcast Section -->
+    <section id="podcast" class="section container">
+        <div class="podcast-layout">
+            <div class="podcast-details">
                 <span class="section-label">Our Podcast</span>
-                <h2>Meaningful Conversations</h2>
+                <h2>Conversations we wish we had heard earlier.</h2>
                 <p>Each episode features conversations with women founders and builders across industries, from technology and beauty to real estate, creative ventures, and social impact.</p>
                 <p>No two journeys look the same, and that’s what makes them worth listening to. These conversations explore what it really means to build, often touching on:</p>
-                <ul class="podcast-topics">
+                <ul class="podcast-topics-list">
                     <li>Starting something from nothing</li>
                     <li>Navigating pivots and transitions</li>
                     <li>Building across cultures and markets</li>
                     <li>Lessons shaped by failure, growth, and everything in between</li>
                 </ul>
-                <a href="https://open.spotify.com/show/3D0L44EIQXiHquLyleXRE4" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">Listen on Spotify</a>
+                <a href="https://open.spotify.com/show/3D0L44EIQXiHquLyleXRE4" target="_blank" class="btn btn-outline">Listen on Spotify</a>
             </div>
             <div class="podcast-embed">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/3D0L44EIQXiHquLyleXRE4?utm_source=generator&theme=0" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe class="podcast-embed-frame" style="border-radius:0px" src="https://open.spotify.com/embed/show/3D0L44EIQXiHquLyleXRE4?utm_source=generator&theme=0" width="100%" height="450" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <section id="community" class="community section container fade-up">
-        <span class="section-label" style="text-align: center;">Our Community</span>
-
-        <div class="community-grid">
-            <div class="community-img-wrapper">
-                <img src="assets/community/event_1.jpg" alt="FoundHers Community Event">
+    <!-- Global Community Section -->
+    <section class="section global-section">
+        <div class="container global-content">
+            <span class="section-label">Chapters</span>
+            <h2 class="global-title">Born in London. Growing through women everywhere.</h2>
+            <div class="global-cities-list">
+                <span class="city-item">London</span>
+                <span class="city-item">Paris</span>
+                <span class="city-item">San Francisco</span>
+                <span class="city-item">and beyond</span>
             </div>
-            <div class="community-img-wrapper offset-img">
-                <img src="assets/community/event_2.jpg" alt="FoundHers Community Cooking">
-            </div>
-            <div class="community-img-wrapper">
-                <img src="assets/community/event_3.jpg" alt="FoundHers Night Gathering">
-            </div>
-            <div class="community-img-wrapper offset-img">
-                <img src="assets/community/event_4.jpg" alt="FoundHers Networking Event">
-            </div>
-            <div class="community-img-wrapper">
-                <img src="assets/community/event_5.jpg" alt="FoundHers Community Event">
-            </div>
-            <div class="community-img-wrapper offset-img">
-                <img src="assets/community/event_6.jpg" alt="FoundHers Community Gathering">
-            </div>
-            <div class="community-img-wrapper">
-                <img src="assets/community/event_7.jpg" alt="FoundHers Community Interaction">
-            </div>
-        </div>
-
-        <div class="community-text">
-            <h2>FoundHers is more than a podcast. We are starting a movement.</h2>
-            <p>For too long, many startup and venture spaces have been dominated by a narrow set of voices. FoundHers exists to broaden that conversation.</p>
-            <p>We are building a global network of women founders, operators, creators, and future entrepreneurs who believe in sharing ideas, learning from each other, and supporting the next generation of builders.</p>
-            <p style="margin-top: 2rem; font-family: var(--font-serif); font-size: 1.25rem; font-style: italic;">
-                Through interviews, events, and collaborations, we create spaces where meaningful conversations, and meaningful connections, can happen.
-            </p>
+            <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="btn btn-outline">Start a chapter</a>
         </div>
     </section>
 
-    <section id="team" class="team section container fade-up">
+    <!-- Team Section -->
+    <section id="team" class="section container">
         <span class="section-label" style="text-align: center;">Our Team</span>
         <h2 style="text-align: center; margin-bottom: 5rem; font-size: clamp(2rem, 4vw, 3rem);">Meet the Women Behind FoundHers</h2>
-
-        <div class="roster-carousel">
-            <div class="roster-member">
-                <div class="roster-image-placeholder">
+        
+        <div class="team-grid">
+            <!-- Teresa Wang -->
+            <div class="team-card">
+                <div class="team-card-image">
                     <img src="assets/team/teresa.jpg" alt="Teresa Wang">
                 </div>
                 <h4>Teresa Wang</h4>
-                <span>Founder & Host</span>
-                <span class="episode-count">13 episodes</span>
-                <div class="bio-text">
+                <div class="team-card-meta">Founder & Host &middot; 13 episodes</div>
+                <div class="team-card-teaser">Capturing untold perspectives and building early-stage ventures in human connection.</div>
+                <div class="team-card-cta">Read Biography <span>&rarr;</span></div>
+                <!-- Full Bio Content (SEO Friendly, visible in popup modal) -->
+                <div class="team-full-bio" style="display:none;">
                     <p>Born in Beijing, Teresa grew up across China, the US, and Europe. With a background in journalism, sociology, and business, she brings a cross-cultural and interdisciplinary lens to storytelling. She began her journey as a documentary filmmaker in 2019, capturing real lives and untold perspectives, a sensibility that continues to shape her work in business today.</p>
                     <p>She founded FoundHers to create space for more honest conversations and to bring together a community of women in entrepreneurship, where voices and representation remain limited. Alongside this, Teresa is building early-stage ventures in human connection and investment data. She enjoys traveling and curating spaces for ambitious, like-minded women to connect and grow.</p>
                 </div>
             </div>
-            <div class="roster-member">
-                <div class="roster-image-placeholder">
+
+            <!-- Christine Ganshof -->
+            <div class="team-card">
+                <div class="team-card-image">
                     <img src="assets/team/christine.jpg" alt="Christine Ganshof">
                 </div>
                 <h4>Christine Ganshof</h4>
-                <span>French Podcasts Lead</span>
-                <span class="episode-count">2 episodes</span>
-                <div class="bio-text">
+                <div class="team-card-meta">French Podcasts Lead &middot; 2 episodes</div>
+                <div class="team-card-teaser">Leads HycoJet, a Swiss water technology venture making sustainable living feel effortless.</div>
+                <div class="team-card-cta">Read Biography <span>&rarr;</span></div>
+                <div class="team-full-bio" style="display:none;">
                     <p>Born in Switzerland and raised across borders, Christine studied business engineering in Belgium before completing her Master's at London Business School. By day, she leads HycoJet, a Swiss water technology venture making sustainable living feel effortless, a path she chose over global big tech because she believed the most meaningful problems were still waiting to be solved. Away from work, she finds her centre at the pottery wheel, in the mountains on a long hike, or exploring a new trail, never more herself than with mud on her boots or clay on her hands.</p>
                     <p>She has always been captivated by the stories of women who build, quietly, boldly, and often without enough of an audience. So when Teresa offered her the French chair at FoundHers, she didn't think twice. For Christine, it's less about having a seat at the table and more about making sure the table keeps getting bigger.</p>
                 </div>
             </div>
-            <div class="roster-member">
-                <div class="roster-image-placeholder">
+
+            <!-- Yuning Liu -->
+            <div class="team-card">
+                <div class="team-card-image">
                     <img src="assets/team/yuning.jpg" alt="Yuning Liu">
                 </div>
                 <h4>Yuning Liu</h4>
-                <span>Host -EN</span>
-                <span class="episode-count">3 episodes</span>
-                <div class="bio-text">
+                <div class="team-card-meta">Host - EN &middot; 3 episodes</div>
+                <div class="team-card-teaser">Headhunter and behavioural science graduate dedicated to amplifying narrative layers.</div>
+                <div class="team-card-cta">Read Biography <span>&rarr;</span></div>
+                <div class="team-full-bio" style="display:none;">
                     <p>Yuning is an executive search headhunter from 9 to 5, and enjoys photography, piano, guitar, vlogging, and podcast hosting outside of work.</p>
                     <p>Born and raised in Guangzhou, she has lived in the UK for the past 10 years and holds degrees in Psychology and Behavioural Science. Exposure to diverse minds, opinions, and perspectives has shaped her open mindset and inspired her to amplify the voices of others.</p>
                     <p>Working closely with talent in business and finance, she feels a strong responsibility to contribute to and help guide these conversations, bringing forward narratives that deserve to be both seen and heard.</p>
                 </div>
             </div>
-            <div class="roster-member">
-                <div class="roster-image-placeholder">
+
+            <!-- Hexie Li -->
+            <div class="team-card">
+                <div class="team-card-image">
                     <img src="assets/team/hexie.jpg" alt="Hexie Li">
                 </div>
                 <h4>Hexie Li</h4>
-                <span>Host -CN</span>
-                <span class="episode-count">5 episodes</span>
-                <div class="bio-text">
+                <div class="team-card-meta">Host - CN &middot; 5 episodes</div>
+                <div class="team-card-teaser">A technology product builder who has directed documentaries featuring women across 15 countries.</div>
+                <div class="team-card-cta">Read Biography <span>&rarr;</span></div>
+                <div class="team-full-bio" style="display:none;">
                     <p>Born to innovate.</p>
                     <p>Healthy (Hexie) has lived across China, the UK, and now the US. She loves traveling the world and approaching things through the lens of different cultures and people.</p>
                     <p>She's interned in seven different fields — law, medicine, finance, marketing, and more — before deciding to go all in on tech. She's worked in product, engineering, and growth across multiple tech companies, and is now building her own product, driven by a desire to deliver the right solution.</p>
                     <p>Healthy is passionate about directing. She's directed documentaries featuring women across 15 countries, hoping to inspire audiences through story and film.</p>
                 </div>
             </div>
-            <div class="roster-member">
-                <div class="roster-image-placeholder">
+
+            <!-- Prika Huang -->
+            <div class="team-card">
+                <div class="team-card-image">
                     <img src="assets/team/prika.jpg" alt="Prika Huang">
                 </div>
                 <h4>Prika Huang</h4>
-                <span>Host -CN</span>
-                <span class="episode-count">2 episodes</span>
-                <div class="bio-text">
+                <div class="team-card-meta">Host - CN &middot; 2 episodes</div>
+                <div class="team-card-teaser">Biostatistics PhD student exploring storytelling, identity, and lives beyond conventional paths.</div>
+                <div class="team-card-cta">Read Biography <span>&rarr;</span></div>
+                <div class="team-full-bio" style="display:none;">
                     <p>Raised in Hangzhou and shaped by her grandmother’s strength, she developed an early awareness of feminism and independence. Now a Biostatistics PhD student and drawn to both logic and narratives, she began exploring storytelling through podcasting—creating spaces for conversations about identity, ambition, and lives beyond conventional paths. Outside academia, she is a curious player on Earth, she is drawn to food, learning, and everyday life—constantly exploring the different ways people think, behave, and shape their own paths.</p>
                 </div>
             </div>
-            <div class="roster-member">
-                <div class="roster-image-placeholder">
+
+            <!-- Shuyang Zhao -->
+            <div class="team-card">
+                <div class="team-card-image">
                     <img src="assets/team/shuyang.jpg" alt="Shuyang Zhao">
                 </div>
                 <h4>Shuyang Zhao</h4>
-                <span>Host -CN</span>
-                <span class="episode-count">3 episodes</span>
-                <div class="bio-text">
+                <div class="team-card-meta">Host - CN &middot; 3 episodes</div>
+                <div class="team-card-teaser">US tax professional focused on connecting resources and fostering female dialogues.</div>
+                <div class="team-card-cta">Read Biography <span>&rarr;</span></div>
+                <div class="team-full-bio" style="display:none;">
                     <p>Shuyang is a US tax professional, shaped by three years of studying and living in New York, followed by six years working in London. She is a Tianjin native with a genuine interest in engaging with people across industries. Shuyang is committed to supporting female entrepreneurs by connecting resources, fostering meaningful dialogue, and helping turn ambitious ideas into reality—efficiently and sustainably.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="get-involved" class="get-involved section fade-up">
-        <div class="container">
-            <span class="section-label" style="text-align: center; color: var(--accent-light);">Get In Touch</span>
-            <h2 class="section-title">Get Involved</h2>
-            <p class="section-subtitle">FoundHers is growing into a global community — and we're always excited to meet people who want to build with us.</p>
-            
-            <div class="involved-grid">
-                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="involved-card">
-                    <h3>Are you a Founder?</h3>
-                    <p>If you're building a company and have a story to share, we'd love to hear from you. We're always looking for thoughtful founder conversations to inspire more women!</p>
-                    <span class="card-link">Share your story &rarr;</span>
+    <!-- Glassmorphic Modal for full bio details -->
+    <div id="bioModal" class="bio-modal">
+        <div class="bio-modal-content">
+            <button class="bio-modal-close" aria-label="Close bio">&times;</button>
+            <div class="bio-modal-header">
+                <div class="bio-modal-photo">
+                    <img id="modalPhoto" src="" alt="">
+                </div>
+                <div class="bio-modal-titles">
+                    <h3 id="modalName"></h3>
+                    <span id="modalMeta"></span>
+                </div>
+            </div>
+            <div class="bio-modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="section container">
+        <span class="section-label">Involvement Pathways</span>
+        <div class="pathways-layout">
+            <div class="pathways-list">
+                <!-- Join Community -->
+                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="pathway-row">
+                    <h3>Join the community</h3>
+                    <p>For women who want to attend events, meet others and become part of the wider FoundHers network.</p>
+                    <div class="pathway-arrow">&rarr;</div>
                 </a>
                 
-                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="involved-card">
-                    <h3>Start a Chapter</h3>
-                    <p>Interested in bringing FoundHers to your city? We're building local chapters around the world to host conversations, founder meetups and VC-founder matchmaking.</p>
-                    <span class="card-link">Start a chapter &rarr;</span>
+                <!-- Share your story -->
+                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="pathway-row">
+                    <h3>Share your story</h3>
+                    <p>For founders, operators and women building something who may be interested in joining the podcast or being featured.</p>
+                    <div class="pathway-arrow">&rarr;</div>
                 </a>
 
-                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="involved-card">
-                    <h3>Join the Team</h3>
-                    <p>Want to be a part of shaping the movement? We're looking for curious women who care about storytelling and building meaningful communities. (P.S. We need social media managers!)</p>
-                    <span class="card-link">Join us &rarr;</span>
+                <!-- Start a chapter -->
+                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="pathway-row">
+                    <h3>Start a chapter</h3>
+                    <p>For women interested in building a FoundHers presence in their city or on their campus.</p>
+                    <div class="pathway-arrow">&rarr;</div>
+                </a>
+
+                <!-- Join the team -->
+                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="pathway-row">
+                    <h3>Join the team</h3>
+                    <p>For people interested in contributing to FoundHers through events, content, social media, podcast production or community building.</p>
+                    <div class="pathway-arrow">&rarr;</div>
+                </a>
+
+                <!-- Partner with us -->
+                <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="pathway-row">
+                    <h3>Partner with us</h3>
+                    <p>For organisations, communities and individuals interested in collaborations.</p>
+                    <div class="pathway-arrow">&rarr;</div>
                 </a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container final-cta-content">
+            <h2>A global movement empowering and connecting women entrepreneurs, founders, operators, and investors.</h2>
+            <p>Connecting founders, operators, and investors through thoughtful conversations.</p>
+            <a href="https://form.typeform.com/to/Pi1uYGIk" target="_blank" class="btn btn-primary">Join the community</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-wrap">
         <div class="container footer-content">
-            <div class="footer-brand">
-                <img src="assets/logo.png" alt="FoundHers Logo" class="footer-logo">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> FoundHers.</p>
-            </div>
-            <div class="footer-links">
-                <a href="https://www.instagram.com/found__hers/" target="_blank">Instagram</a>
-                <a href="https://open.spotify.com/show/3D0L44EIQXiHquLyleXRE4" target="_blank">Spotify</a>
-                <a href="https://www.xiaoyuzhoufm.com/podcast/679297d0238627d486e599e9" target="_blank">Xiaoyuzhou</a>
-                <a href="mailto:hello@foundhers.co">hello@foundhers.co</a>
+            <div class="footer-columns">
+                <div class="footer-identity">
+                    <img src="assets/logo.png" alt="FoundHers Logo" class="footer-logo">
+                    <p class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> FoundHers.</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="https://www.instagram.com/found__hers/" target="_blank">Instagram</a>
+                    <a href="https://open.spotify.com/show/3D0L44EIQXiHquLyleXRE4" target="_blank">Spotify</a>
+                    <a href="https://www.xiaoyuzhoufm.com/podcast/679297d0238627d486e599e9" target="_blank">Xiaoyuzhou</a>
+                    <a href="mailto:hello@foundhers.co">hello@foundhers.co</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Interactive Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             // Mobile Menu Toggle
@@ -257,23 +376,57 @@
                 });
             });
 
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15
+            // Glassmorphic Bio Modal Controller
+            const teamCards = document.querySelectorAll('.team-card');
+            const bioModal = document.getElementById('bioModal');
+            const modalPhoto = document.getElementById('modalPhoto');
+            const modalName = document.getElementById('modalName');
+            const modalMeta = document.getElementById('modalMeta');
+            const modalBody = document.getElementById('modalBody');
+            const modalCloseBtn = document.querySelector('.bio-modal-close');
+
+            const openBioModal = (card) => {
+                const name = card.querySelector('h4').textContent;
+                const meta = card.querySelector('.team-card-meta').textContent;
+                const photoSrc = card.querySelector('.team-card-image img').src;
+                const fullBioHtml = card.querySelector('.team-full-bio').innerHTML;
+
+                modalName.textContent = name;
+                modalMeta.textContent = meta;
+                modalPhoto.src = photoSrc;
+                modalPhoto.alt = name;
+                modalBody.innerHTML = fullBioHtml;
+
+                bioModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
             };
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target);
+            const closeBioModal = () => {
+                bioModal.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            teamCards.forEach(card => {
+                card.addEventListener('click', () => openBioModal(card));
+            });
+
+            if (modalCloseBtn) {
+                modalCloseBtn.addEventListener('click', closeBioModal);
+            }
+
+            if (bioModal) {
+                bioModal.addEventListener('click', (e) => {
+                    if (e.target === bioModal) {
+                        closeBioModal();
                     }
                 });
-            }, observerOptions);
+            }
 
-            document.querySelectorAll('.fade-up').forEach((el) => {
-                observer.observe(el);
+            // Close on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && bioModal.classList.contains('active')) {
+                    closeBioModal();
+                }
             });
         });
     </script>
