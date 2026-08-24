@@ -455,6 +455,28 @@ img {
     margin-bottom: 3rem;
 }
 
+/* Membership Section */
+.membership-section {
+    background-color: var(--bg-stone);
+    text-align: center;
+}
+
+.membership-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.membership-content h2 {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    margin-bottom: 1.5rem;
+}
+
+.membership-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
 /* Podcast Section */
 .podcast-layout {
     display: grid;
