@@ -680,67 +680,8 @@ img {
     gap: 3rem 2rem;
 }
 
-/* Founder feature card */
-.team-card--feature {
-    display: grid;
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-    gap: 3.5rem;
-    align-items: center;
-}
-
-.team-card--feature .team-card-image {
-    margin-bottom: 0;
-    aspect-ratio: 4/5;
-}
-
-.team-card--feature h4 {
-    font-size: clamp(2rem, 4vw, 2.8rem);
-}
-
-.team-card--feature .team-card-teaser {
-    font-size: 1.1rem;
-    max-width: 32rem;
-}
-
-/* Community block: stone inset to separate from podcast storytelling */
-.team-group--community {
-    background: var(--bg-stone);
-    padding: 4rem 3rem;
-}
-
-.team-grid--community {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: stretch;
-}
-
-.team-group--community .team-card {
-    border-top-color: rgba(17, 17, 17, 0.12);
-}
-
-/* Text-only monogram (photo pending) */
-.team-card-image--monogram,
-.bio-modal-photo[data-initials] {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(145deg, var(--accent-light), var(--accent-rose));
-    color: var(--bg-warm);
-    font-family: var(--font-serif);
-    font-style: italic;
-}
-
-.team-card-image--monogram span {
-    font-size: clamp(3rem, 6vw, 5rem);
-    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.team-card:hover .team-card-image--monogram span {
-    transform: scale(1.06);
-}
-
-.bio-modal-photo[data-initials]::after {
-    content: attr(data-initials);
-    font-size: 1.8rem;
+.team-grid--community .chapter-panel {
+    grid-column: span 2;
 }
 
 /* Imperial chapter panel */
@@ -753,8 +694,6 @@ img {
 }
 
 .chapter-team {
-    background: var(--bg-warm);
-    padding: 2rem 1.75rem;
     flex-grow: 1;
 }
 
@@ -782,29 +721,9 @@ img {
     gap: 1.5rem;
 }
 
-.chapter-member {
-    display: grid;
-    grid-template-columns: 44px 1fr;
-    gap: 1rem;
-    align-items: start;
-}
-
 .chapter-member + .chapter-member {
     border-top: 1px solid var(--border-color);
     padding-top: 1.5rem;
-}
-
-.chapter-initials {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid var(--accent-rose);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-serif);
-    font-style: italic;
-    color: var(--accent-rose);
 }
 
 .chapter-member strong {
@@ -1227,19 +1146,8 @@ img {
         margin-top: 4rem;
     }
 
-    .team-card--feature {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
 
-    .team-group--community {
-        padding: 2.5rem 1.25rem;
-        margin: 4rem -1.5rem 0;
-    }
 
-    .chapter-team {
-        padding: 1.5rem 1.25rem;
-    }
     
     .bio-modal-content {
         padding: 2.2rem 1.8rem;
